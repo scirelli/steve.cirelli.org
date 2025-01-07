@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tinder Bot</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container" style="margin-top:30px;">
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="">
+                        <a name="top" href="#"></a>
+                        <form id="fFBCookie" name="fFBCookie" method="POST" action="runbot.php" >
+                            <div class="form-group">
+                                <p>
+                                    <label for="ffFBCookie">
+                                        Paste your <a href="https://www.facebook.com/dialog/oauth?client_id=464891386855067&redirect_uri=https://www.facebook.com/connect/login_success.html&scope=public_profile,user_friends,email,public_profile,user_about_me,user_activities,user_birthday,user_education_history,user_friends,user_interests,user_likes,user_location,user_photos,user_relationship_details&response_type=token" target="_blank">Facebook</a> cookie in the text box below. You should read the <a class="text-warning" href="#warning">warning</a> below before doing so.
+                                    </label>
+                                </p>
+                                <input id="ffFBCookie" name="ffFBCookie" type="text" value="" required="required" size="100" form="fFBCookie" placeholder="Paste your Facebook cookie here." class="form-control"/>
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="ffFilter" name="ffFilter" type="checkbox" value="spamfilter" form="fFBCookie" class=""/>Spam Filter
+                                    </label>
+                                    <label style="margin-left:10px;">
+                                        <input id="ffLike" name="ffLike" type="checkbox" value="like" form="fFBCookie" class="" checked="checked"/>Like all
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pull-right" style="margin-bottom:5px;">
+                                <input type="submit" value="Submit" class="btn btn-default" form="fFBCookie"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div  class="col-md-8">
+                    <div class="bg-danger" style="padding:15px;">
+                        <h3 class="text-center"><a name="warning" href="#top" class="text-warning ">WARNING!</a></h3>
+                        <p>Anyone that has your Facebook.com (FB) cookie will have access to your Facebook account. That means they can do anything you can do with your account.</p>
+                        <p>This site will not store your FB cookie on disk. It will only be used to authenticate to Tinder.</p>
+                        <p>If you want to revoke the cookie that you give this site, go to the browser that you got the cookie from and logout/sign out of your FB session.</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div  class="col-md-8">
+                    <div name="info" class="bg-info" style="margin-top:20px; padding:15px;">
+                        <h4>How to Get Your Facebook Cookie</h4>
+                        <ul class="list-unstyled">
+                            <li><h5>Chrome:</h5></li>
+                            <li>
+                                <ol>
+                                    <li>Open a new tab.</li>
+                                    <li>Press <b>"control+shift+i"</b> to open Chrome Developer tools.</li>
+                                    <li>Click the "<b>Network</b>" tab.</li>
+                                    <li>Check the "<b>Preserve log</b>" and "<b>Disable cahce</b>" boxes.</li>
+                                    <li>In the same tab, go to <a href="https://www.facebook.com/dialog/oauth?client_id=464891386855067&redirect_uri=https://www.facebook.com/connect/login_success.html&scope=public_profile,user_friends,email,public_profile,user_about_me,user_activities,user_birthday,user_education_history,user_friends,user_interests,user_likes,user_location,user_photos,user_relationship_details&response_type=token" target="_blank">Facebook App authentication page</a></li>
+                                    <li>Click on the line with the name "<b>login_success.html</b>". You should see somethng like this.
+                                        <a href="img/facebook_chrome_app_auth.jpg"><img src="img/facebook_chrome_app_auth.jpg" height="50%" width="50%"/></a>
+                                    </li>
+                                    <!--<li>Press <b>"control+shift+i"</b> to open Chrome Developer tools. The page may crash. Reload the page if it does.</li>
+                                    <li>Click the <b>"console" tab</b>. You should see somethng like this.
+                                        <a href="img/facebook_chrome.jpg"><img src="img/facebook_chrome.jpg" height="50%" width="50%"/></a>
+                                    </li>
+                                    <li>At the bottom of the "console" tab you should see a <b>">"</b> prompt box. When you click in this box you see a cursor.</li>
+                                    <li>Type <b>"window.document.cookie;"</b>. If this doesn't work then FB is trying to prevent you from using the console. You can try closing the browser and starting over. Or try another broswer.</li>
+                                    <li>Copy the output of the statement. It will be the text between the double quotes "&lt;cookie string&gt;".</li>-->
+                                    <li>Copy the string to the right of "<b>cookie:</b>" (It has been removed from the image above.), do not include the "cookie:" label. </li>
+                                    <li>Paste this string (with out the double quotes) into the text field <a href="#ffFBCookie">above</a>.</li>
+                                    <li>Click <b>"Submit"</b></li>
+                                </ol>
+                            </li>
+                            <li><h5>Firefox:</h5></li>
+                            <li>
+                                <ol>
+                                    <li>Open a new tab.</li>
+                                    <li>Press <b>"control+shift+i"</b> to open Firefox Developer tools.</li>
+                                    <li>Click the "<b>Network</b>" tab.</li>
+                                    <li>In the same tab, go to <a href="https://www.facebook.com/dialog/oauth?client_id=464891386855067&redirect_uri=https://www.facebook.com/connect/login_success.html&scope=public_profile,user_friends,email,public_profile,user_about_me,user_activities,user_birthday,user_education_history,user_friends,user_interests,user_likes,user_location,user_photos,user_relationship_details&response_type=token" target="_blank">Facebook App authentication page</a></li>
+                                    <li>Click on the line with the name "<b>login_success.html</b>". You should see somethng like this.
+                                        <a href="img/facebook_firefox_app_auth.jpg"><img src="img/facebook_firefox_app_auth.jpg" height="50%" width="50%"/></a>
+                                    </li>
+                                    <li>Click on the line that says "<b>cookie:</b>" (It has been removed from the image above.), copy the text out of there. </li>
+                                    <li>Paste this string (with out the double quotes) into the text field <a href="#ffFBCookie">above</a>.</li>
+                                    <li>Click <b>"Submit"</b></li>
+                                </ol>
+                            </li>
+                            <li><h5>Internet Exploerer (IE):</h5></li>
+                            <li>
+                                <ol>
+                                    <li>Why are you using IE???</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd">
+
+
+
+  <Folders>
+    <History>
+      <Running Name="Running">
+        <ActivityRef>
+          <Id>2009-10-22T20:38:12Z</Id>
+        </ActivityRef>
+      </Running>
+      <Biking Name="Biking"/>
+      <Other Name="Other"/>
+      <MultiSport Name="MultiSport">
+        <MultisportActivityRef></MultisportActivityRef>
+        <MultisportActivityRef></MultisportActivityRef>
+        <MultisportActivityRef></MultisportActivityRef>
+        <MultisportActivityRef></MultisportActivityRef>
+        <MultisportActivityRef></MultisportActivityRef>
+      </MultiSport>
+    </History>
+    <Workouts>
+      <Running Name="Running">
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+      </Running>
+      <Biking Name="Biking">
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+        <WorkoutNameRef></WorkoutNameRef>
+      </Biking>
+      <Other Name="Other">
+        <WorkoutNameRef></WorkoutNameRef>
+      </Other>
+    </Workouts>
+    <Courses>
+      <CourseFolder Name="Courses"/>
+    </Courses>
+  </Folders>
+
+  <Activities>
+    <Activity Sport="Running">
+      <Id>2009-10-22T20:38:12Z</Id>
+      <Lap StartTime="2009-10-22T20:38:12Z">
+        <TotalTimeSeconds>0.8000000</TotalTimeSeconds>
+        <DistanceMeters>0.0000000</DistanceMeters>
+        <MaximumSpeed>0.0000000</MaximumSpeed>
+        <Calories>0</Calories>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:12Z</Time>
+            <Position>
+              <LatitudeDegrees>42.1201386</LatitudeDegrees>
+              <LongitudeDegrees>-75.9409459</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>336.1181641</AltitudeMeters>
+            <DistanceMeters>0.0000000</DistanceMeters>
+            <SensorState>Absent</SensorState>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:13Z</Time>
+          </Trackpoint>
+        </Track>
+        <Track>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:21Z</Time>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:22Z</Time>
+            <Position>
+              <LatitudeDegrees>42.1201558</LatitudeDegrees>
+              <LongitudeDegrees>-75.9409352</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>339.0020752</AltitudeMeters>
+            <DistanceMeters>0.0000000</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>89</Value>
+            </HeartRateBpm>
+            <SensorState>Absent</SensorState>
+          </Trackpoint>
+        </Track>
+      </Lap>
+      <Lap StartTime="2009-10-22T20:38:22Z">
+        <TotalTimeSeconds>1.1000000</TotalTimeSeconds>
+        <DistanceMeters>0.4092638</DistanceMeters>
+        <MaximumSpeed>0.0000000</MaximumSpeed>
+        <Calories>0</Calories>
+        <AverageHeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+          <Value>89</Value>
+        </AverageHeartRateBpm>
+        <MaximumHeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+          <Value>89</Value>
+        </MaximumHeartRateBpm>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:22Z</Time>
+            <Position>
+              <LatitudeDegrees>42.1201558</LatitudeDegrees>
+              <LongitudeDegrees>-75.9409352</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>339.0020752</AltitudeMeters>
+            <DistanceMeters>0.0000000</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>89</Value>
+            </HeartRateBpm>
+            <SensorState>Absent</SensorState>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:23Z</Time>
+            <Position>
+              <LatitudeDegrees>42.1201599</LatitudeDegrees>
+              <LongitudeDegrees>-75.9409377</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>339.4826660</AltitudeMeters>
+            <DistanceMeters>0.4092638</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>89</Value>
+            </HeartRateBpm>
+            <SensorState>Absent</SensorState>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2009-10-22T20:38:24Z</Time>
+          </Trackpoint>
+        </Track>
+      </Lap>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>3580760363</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Activity>
+  </Activities>
+
+  <Author xsi:type="Application_t">
+    <Name>Garmin Training Center(r)</Name>
+    <Build>
+      <Version>
+        <VersionMajor>3</VersionMajor>
+        <VersionMinor>4</VersionMinor>
+        <BuildMajor>3</BuildMajor>
+        <BuildMinor>0</BuildMinor>
+      </Version>
+      <Type>Release</Type>
+      <Time>May 20 2008, 16:58:11</Time>
+      <Builder>sqa</Builder>
+    </Build>
+    <LangID>EN</LangID>
+    <PartNumber>006-A0119-00</PartNumber>
+  </Author>
+
+</TrainingCenterDatabase>

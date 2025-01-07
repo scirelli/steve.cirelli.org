@@ -1,0 +1,15 @@
+/* ---- Survey Page ----*/ 
+div#surveyDiv > form > ol {
+    margin:0 0 0 25px;
+    padding:0 0 0 0;
+}    
+div#surveyDiv > form > ol li {
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+div#surveyDiv .msg { margin:0 0 15px 0; }
+
+div#surveyDiv > form input[type = 'submit']{
+   margin-left:10px; 
+   margin-right:auto;
+}

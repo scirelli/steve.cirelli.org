@@ -1,0 +1,15 @@
+/* ---- Courses Page ----*/
+div#courseContainer{
+    width:100%;
+    margin:0px 0 0 0;
+}
+div#coursesHeaderDiv{
+}
+div#coursesContentDiv{
+    margin-right:auto;
+    margin-left:auto;
+}
+.section{
+    margin:15px 0 0px 0;
+}
+

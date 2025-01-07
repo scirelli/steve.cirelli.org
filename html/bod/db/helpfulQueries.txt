@@ -1,0 +1,53 @@
+\. <filename>
+--Get all subscription user info
+SELECT au.anonuser_id as id, au.email, nlc.category,
+CASE WHEN au.validated = 1 THEN 1 ELSE 0 END as validated, au.hash
+FROM anonymous_users au
+    JOIN anonymoususers_newsletterscategories au_nlc on au_nlc.anonuser_id = au.anonuser_id
+    JOIN newsletters_categories nlc on au_nlc.newslettercat_id = au_nlc.newslettercat_id;
+
+--delete from anonymous_users where anonuser_id = 12;
+--delete from anonymoususers_newsletterscategories where anonuser_id = 12 AND newsletters_categories = 1;
+
+
+--Get a specific subscription
+SELECT * 
+FROM anonymoususers_newsletterscategories 
+WHERE anonuser_id IN (SELECT anonuser_id FROM Anonymous_Users WHERE hash = '092192a07ef290011ba0bdf49a9586a9' AND anonuser_id = 1)
+    AND newslettercat_id IN (SELECT newslettercat_id FROM newsletters_categories WHERE newslettercat_id = 1);
+
+-- Example row counting 
+SELECT '' cnt, answerType, question_id
+FROM questions q
+  JOIN answer_types at ON q.answerType_id = at.answerType_id
+WHERE question_id in (1,2,3,4)
+UNION
+SELECT 'found_rows', '', FOUND_ROWS();
+
+-- Matching answers to questions
+SELECT question_id, answerType
+FROM questions q
+  JOIN answer_types at ON q.answerType_id = at.answerType_id
+WHERE question_id in (1,2,3,4);
+
+-- Match survey and questions and answers
+SELECT surveyName, q.question_id, answerType
+FROM surveys s
+  JOIN questions q ON q.survey_id = s.survey_id
+  JOIN answers a ON a.question_id = q.question_id
+  JOIN answer_types at ON q.answerType_id = at.answerType_id
+WHERE s.survey_id = 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+#newsLetterArchiveContainer{
+}
+#newsLetterArchiveTitle{
+    overflow:hidden;
+}
+#newsLetterArchiveTitle h2{
+    text-align:center;
+    margin-top:0px;
+}
+#newsLetterNotetoUser{
+    margin-bottom:15px;
+}
+#newsLettersContainer{
+    width:100%;
+}
+#newsLettersContainer div.newsLetter{
+    margin-left:30%;
+    margin-right:30%;
+    /*border:double #FFF;*/
+    margin-bottom:4px;
+    padding-left:3px;
+    text-align:center;
+}
+#newsLettersContainer div.newsLetterNote{
+
+}
+#newsLettersContainer div.newsLetterLink a{
+    text-decoration:none;
+    color:#FF9600;
+}
+#newsLettersContainer div.newsLetterLink a:hover{
+    text-decoration:underline;
+}
+
+.newsLetterHoverIn{
+    background-color:#FF9600;
+    color:#FFF;
+}
+.newsLetterHoverOut{
+    background-color:transparent;
+    color:#FF9600;
+}
+#newsLetterFormContainer{
+    margin-bottom:15px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+#newsLetterFormContainer form#fNewsletters div{
+    display:inline;
+}
+#newsLetterFormContainer form#fNewsletters input[type ='text']{
+    width:200px;
+}

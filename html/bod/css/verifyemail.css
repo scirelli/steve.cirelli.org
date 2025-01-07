@@ -1,0 +1,10 @@
+div#divVerifyEmail_Ok{
+    text-align:center;
+    margin-top:auto;
+}
+div#divVerifyEmail_Ok button{
+    font-size:14px;
+    font-weight:bold;
+    width:100px;
+    margin-top:50px;
+}

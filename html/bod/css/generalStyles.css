@@ -1,0 +1,368 @@
+/* ---- General ---*/
+body{ 
+    background:#122981 url(../images/gradient_bg.jpg) repeat-x;
+    margin:0 0 0 0;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    height:2004px;
+}
+div#container{
+    margin:200px auto 0 auto;
+    width:712px;
+    position:relative;
+    background-color:transparent;
+    z-index:4;
+}
+div#sun{
+    background:url(../images/sunlight.jpg) no-repeat;
+    height:481px;
+    width:472px;
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:1;
+}
+div#clouds{
+    position:absolute;
+    top:0px;
+    right:0px;
+    background:#FFF url(../images/clouds.jpg) repeat-x;
+    height:104px;
+    width:100%;
+}
+div#water{
+    position:absolute;
+    top:104px;
+    right:0px;
+    background:#00F url(../images/water_edge.jpg) repeat-x;
+    height:75px;
+    width:100%;
+}
+div#seafloor{
+    background:url(../images/seafloor.jpg) repeat-x 0% 100%;
+    width:100%;
+    height:426px;
+    z-index:2;
+    position:absolute;
+    left:0px;
+    top:2004px;
+}
+div#sceneImg1{
+    background:transparent url(../images/fish1_dc.gif) no-repeat;
+    width:200px;
+    height:110px;
+    z-index:3;
+    position:absolute;
+    top:320px;
+    left:78%;/* 1000px */
+}
+div#sceneImg2{
+    background:transparent url(../images/jelly1c.gif) no-repeat;
+    width:150px;
+    height:93px;
+    z-index:3;
+    position:absolute;
+    top:2000px;
+    left:200px;
+}
+div#sceneImg3{
+    background:transparent url(../images/wshark.gif) no-repeat;
+    width:473px;
+    height:246px;
+    z-index:3;
+    position:absolute;
+    top:1099px;
+    left:43%; /*600px;*/
+}
+div#sceneImg4{
+    background:transparent url(../images/fish2_d.gif) no-repeat;
+    width:310px;
+    height:340px;
+    z-index:3;
+    position:absolute;
+    top:2090px;
+    left:0px;
+}
+
+div#sceneImg5{
+    background:transparent url(../images/islandLogo.gif) no-repeat;
+    width:406px;
+    height:198px;
+    z-index:3;
+    position:absolute;
+    top:-21px;
+    left:615px;
+    display:none;
+}
+
+div#header{
+    margin:0 0 15px 140px;
+    text-align:center;
+    font-weight:bold;
+    padding:0 0 0 0;
+}
+div#header > h1{
+    margin:0 0 0 0;
+    padding: 5px 0 15px 0;
+    font-size:38px;
+    color:#77F
+}
+div#header > h1 + h1{
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    font-size:38px;
+    color:#000;
+    position:absolute;
+    top:4px;
+    left:259px;
+}
+
+div#header div#siteFBLike{
+    background-color:transparent;
+    position:relative;
+    top:-15px;
+    left:-100px;
+    float:right;
+}
+div#header div#BoDLLC{
+    font-size:8px;
+    color:black;
+    position:relative;
+    float:right;
+    top:-48px;
+    left:-5px;
+}
+
+div#logo{
+    width:128px;
+    height:64px;
+    background-color:#F00;
+    margin-bottom:5px;
+    display:none;
+    visibility:hidden;
+}
+div#logo > img{
+    width:100%;
+    height:100%;
+}
+div#menuListDiv{
+    width:140px;
+    position:relative;
+    float:left;
+}
+ul#mainMenuList {
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+ul#mainMenuList li{
+    color:#FF9600;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    list-style:none;
+    font-size:12px;
+    line-height:16px;
+}
+ul#mainMenuList li a{
+    color:#FF9600;
+    text-decoration:none;
+}
+ul#mainMenuList li a:hover{
+    color:#FF9600;
+    text-decoration:underline;
+}
+ul#mainMenuList li a:active{ font-weight:bold; }
+ul#mainMenuList > li{
+    color:#FFF;
+}
+ul#mainMenuList ul{
+    margin:0 0 0 0;
+    padding:0 0 0 1em;
+    border-top:1px solid #003D90; 
+}
+div#mainContent{
+    margin-left:145px;
+    padding:0 0 0 0;
+    font-size:12px;
+    height:1987px;
+    width:567px;
+    overflow:auto;
+}
+
+/* ---- PADI 5 Star Popup ---- */
+div#padi5starPopupDiv{
+    top:0px;
+    left:0px;
+    font-size:11px;
+}
+div#padi5starPopupDiv img:first-child { 
+    width:110px; height:146px; float:left; border:none; margin-right:1em;
+}
+span.fiveStarDC a{
+    color:#FFF;
+    text-decoration:none;
+}
+/* --------------------------- */
+
+/* ---- Loading Message Styles ---- */
+div#loadingMsgContainer{
+    text-align:center;
+    font-weight:bold;
+    font-size: 15px;
+    position:absolute;
+    top:0px; left:0px;
+    z-index:800;
+    width:100%; height:100%;
+    display:none;
+}
+div#loadingMsg{
+    width:100%; 
+    background:transparent;
+    position:absolute;
+    top:35%; left:0px;
+}
+div#loadingMsg > span{
+    text-decoration:blink;
+}
+div#loadingMsg > #loadingImg{
+    background:transparent url(../images/ajax-loader.gif) no-repeat;
+    width:220px; height:19px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#loadingMsgContainer .bkFade{
+    width:100%; height:2300px;
+    background-color:#000;
+    opacity:0.5;
+    filter:alpha(opacity=40);
+}
+/* ------------------------------ */
+
+h3 { text-align:center; }
+
+/* ---- Popup Msg classes ---- */
+div.popUpInfo { 
+    top:0px; left:0px;
+    background-color:#122981;
+    overflow:hidden;
+    position:relative; 
+    width:400px; height:300px; 
+    padding:3px 5px 3px 3px;
+    border:1px solid #FFF;
+    z-index:100;
+    display:none;
+    visibility:hidden;
+}
+div.popUpInfo div { display:inline; }
+div.popUpInfo h3 { text-align:center; }
+
+div.popupContainer{
+    display:none;
+    z-index:100;
+    top:300px; left:30%;
+    position:absolute; 
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    width:498px; 
+}
+div.popupRoundShadowContainer{
+    visibility:visible;
+    background-color:#000;
+    opacity:0.5;
+    filter:alpha(opacity=40);
+    z-index:0;
+    color:black;
+}
+div.popUpShadowContent{ 
+    height:300px;
+}
+div.popupContentContainer{
+    margin:5px 0 0 5px;
+    background-color:white;
+    color:black;
+    z-index:1;
+    position:absolute;
+    top:0px; left:0px;
+    width:488px;
+}
+div.popUpContent { 
+    background-color:white;
+    height:284px;
+    padding:3px 5px 3px 5px;
+    overflow:auto;
+}
+div#generalPopupContent{
+    font-size:12px;
+}
+div#generalPopupContent h6{
+    text-align:center;
+    margin-top:0;
+    margin-bottom:10px;
+    font-size:1.23em;
+    font-weight:bold;
+}
+/* -------------------------- */
+
+.menuTitle{
+    font-size:1.17em;
+    font-weight:bold;
+    color:#FFF;
+}
+.shadow{
+    margin:0 auto 0 auto;
+    background:transparent url(../images/shadow.jpg) no-repeat;
+    width:336px;
+    height:42px;
+}
+.shadow3{
+    margin:0 auto 0 auto;
+    background:transparent url(../images/shadow03.jpg) no-repeat;
+    width:336px;
+    height:42px;
+}
+
+.table{ display:table; border-collapse:collapse; }
+.tr{ display:table-row; }
+.td, .th { 
+    display:table-cell; 
+    padding:3px 25px 3px 5px;
+    text-align:left;
+    border:1px solid #003D90;
+}
+.th{ 
+    font-weight:bold; 
+    text-align:center; 
+    background-color:#999999;
+}
+
+.formRequired{
+    color:#F00;
+    font-weight:bold;
+    font-size:14px;
+}
+.formRequiredNote{
+    color:#FFF;
+    font-size:9px;
+}
+
+/* ---- Rounded Corner Classes ---- */
+.round1, .round2, .round3, .round4, 
+.round1_blue, .round2_blue, .round3_blue, .round4_blue,
+.round1_darkblue, .round2_darkblue, .round3_darkblue, .round4_darkblue { height:1px; font-size:0px; margin:0 0 0 0; padding:0 0 0 0; }
+
+.round1 { border-left:1px solid #000; border-right:1px solid #000; }
+.round2 { border-left:2px solid #000; border-right:2px solid #000; }
+.round3 { border-left:3px solid #000; border-right:3px solid #000; }
+.round4 { border-left:4px solid #000; border-right:4px solid #000; }
+
+.round1_darkblue { border-left:1px solid rgb(36,48,103); border-right:1px solid rgb(36,48,103); }
+.round2_darkblue { border-left:2px solid rgb(36,48,103); border-right:2px solid rgb(36,48,103); }
+.round3_darkblue { border-left:3px solid rgb(36,48,103); border-right:3px solid rgb(36,48,103); }
+.round4_darkblue { border-left:4px solid rgb(36,48,103); border-right:4px solid rgb(36,48,103); }
+
+.round1_blue { border-left:1px solid rgb(94,117,213); border-right:1px solid rgb(94,117,213); }
+.round2_blue { border-left:2px solid rgb(94,117,213); border-right:2px solid rgb(94,117,213); }
+.round3_blue { border-left:3px solid rgb(94,117,213); border-right:3px solid rgb(94,117,213); }
+.round4_blue { border-left:4px solid rgb(94,117,213); border-right:4px solid rgb(94,117,213); }
+div#roundContainer { background-color:#C3D9FF; }
+/* --------------------------------- */

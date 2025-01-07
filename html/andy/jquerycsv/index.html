@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CSV Example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            .tableClass{
+                border-collapse:collapse;
+                border-radius: 15px;
+            }
+            .tdClass{
+                padding:3px 3px 3px 3px;
+                margin:0;
+                border-top:1px solid black;
+                border-bottom:1px solid black;
+                border-right:0;
+                border-left:0;
+                border:1px solid black;
+            }
+            tr .tdClass:first-child{
+                border-right:0;
+                border-left:1px solid black;
+            }
+            tr .tdClass:last-child{
+                border-left:0;
+                border-right:1px solid black;
+            }
+            tr:nth-child(2n){
+                background-color:#E6E6E6;
+            }
+            .thClass{
+                background-color:#6C6C6C;
+                border:1px solid black;
+            }
+            .even{
+                /*background-color:#C6C6C6*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        <form id="myForm" action="" method="post"> 
+            Record Count: <input type="text" name="ffRecordCount" id="ffRecordCount" /> 
+            <input type="submit" value="Submit" /> 
+        </form> 
+
+        <div id="myTableContainer"></div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.csvToTable.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script>
+            $(document).ready(function() { 
+                $('#myForm').submit(function() { 
+                    var file = 'relationships.csv.php',
+                        $ffRecordCount = $('#ffRecordCount'),
+                        data = {recordcount:$ffRecordCount.val()};
+                    $('#myTableContainer').CSVToTable(file,{ data:data, tableClass:'tableClass CSVTable', tdClass:'tdClass', thClass:'thClass', trClass:'trClass' });
+                    return false;
+                }); 
+            }); 
+        </script>
+    </body>
+</html>

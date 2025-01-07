@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="xslt/staff.xsl" ?>
+<page name="staff">
+    <staff id="1">
+        <firstName>Blue Ocean Divers</firstName>
+        <lastname>No Name</lastname>
+        <address></address>
+        <story><![CDATA[No story.]]></story>
+        <nickname></nickname>
+        <joindate>1980-04-20</joindate>
+        <padiLevel></padiLevel>
+        <fileName>logo_large2.GIF</fileName>
+        <filePath>/images/</filePath>
+    </staff>
+</page>

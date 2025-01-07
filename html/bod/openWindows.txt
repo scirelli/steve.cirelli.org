@@ -1,0 +1,5 @@
+anonymous_users.php
+admin/newsletters.php
+newsletters.php
+db/anonymoususers_newslettercategories.php
+act_newsletter.php

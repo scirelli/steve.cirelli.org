@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <table class="main">
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <!-- Desciption -->
+                        <table class="descr">
+                            <tbody>
+                                <tr>
+                                    <td colspan="21">NAVIGATION LOG</td>
+                                </tr>
+                                <tr>
+                                    <td>Aircraft Number</td>
+                                    <td colspan="15" class="data">&nbsp;</td>
+                                    <td>N</td>
+                                    <td>Notes</td>
+                                    <td colspan="3" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="21" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="21" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="21" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="21" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="21" class="data">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Nav Log -->
+                        <table class="navlog">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="4" colspan="3" class="seperator2">Check Points<br/>(Fixes)</th>
+                                </tr>
+
+                                <tr>
+                                    <th style="color:white;background-color:#606060;">VOR</th>
+                                    <th rowspan="4" class="seperator2">Course<br/>(Route)</th>
+                                    <th rowspan="4" class="seperator2">Altitude</th>
+                                    <th colspan="2" style="color:white;background-color:#606060;">Wind</th>
+                                    <th colspan="2" class="seperator1">CAS</th>
+                                    <th colspan="2" rowspan="2">TC</th>
+                                    <th colspan="2" rowspan="2">TH</th>
+                                    <th colspan="2" rowspan="2">MH</th>
+                                    <th colspan="2" rowspan="4" class="seperator2">CH</th>
+                                    <th style="color:white;background-color:#606060;">Dist.</th>
+                                    <th style="color:white;background-color:#606060;" class="seperator1">GS</th>
+                                    <th colspan="2">Time Off</th>
+                                    <th class="seperator0">GPH</th>
+                                </tr>
+
+                                <tr>
+                                    <th>Ident</th>
+                                    <th rowspan="2">Dir.</th>
+                                    <th rowspan="2">Vel.</th>
+                                    <th colspan="2" rowspan="2" class="seperator1 data" style="border-bottom:none;background-color:white;"></th>
+                                    <th>Leg</th>
+                                    <th class="seperator1">Est.</th>
+                                    <th class="data"            colspan="2" style="background-color:white;"></th>
+                                    <th class="seperator0 data"             style="background-color:white;"></th>
+                                </tr>
+
+                                <tr>
+                                    <th class="seperator2">Freq.</th>
+                                    <!--<th colspan="2" style="border-top:none;background-color:white;" class="seperator1">asd</th>-->
+                                    <th colspan="2" rowspan="2" class="seperator2">-L/+R<br/>WCA</th>
+                                    <th colspan="2" rowspan="2" class="seperator2">-E/+W<br/>Var.</th>
+                                    <th colspan="2" rowspan="2" class="seperator2">+/-Dev.</th>
+                                    <th>Rem.</th>
+                                    <th rowspan="2" class="seperator1 seperator2">Act.</th>
+                                    <th>ETE</th>
+                                    <th>ETA</th>
+                                    <th class="seperator0">Fuel</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" colspan="3" class="seperator2 data">Leg Name</td>
+                                    <td class="seperator1 data">ident</td>
+                                    <!--<td style="border-right:none;"></td>-->
+                                    <!--<td style="border-right:none; border-left:none;"></td>-->
+                                    <th colspan="2" class="seperator2">Temp.</th>
+                                    <!--<td>v</td>-->
+                                    <th colspan="2" class="seperator1 seperator2">TAS</th>
+                                    <th class="seperator2 data" style="background-color:white;"></th>
+                                    <th>ATE</th>
+                                    <th>ATA</th>
+                                    <th class="seperator0 rem">Rem</th>
+                                </tr>
+                                <tr>
+                                    <td class="seperator0 seperator2 data">freq</td>
+                                    <td class="seperator2 data" rowspan="2">course</td>
+                                    <td class="seperator2 data" rowspan="2">alt</td>
+                                    <td class="data">d</td>
+                                    <td class="data">v</td>
+                                    <td class="seperator1 seperator2 data" colspan="2" rowspan="2">cas</td>
+                                    <td class="data" colspan="2">tc</td>
+                                    <td class="data" colspan="2">th</td>
+                                    <td class="data" colspan="2">mh</td>
+                                    <td class="seperator2 data" colspan="2" rowspan="2">ch</td>
+                                    <td class="data">leg</td>
+                                    <td class="seperator1 data">est</td>
+                                    <td class="data ete">ete</td>
+                                    <td class="data">eta</td>
+                                    <td class="data seperator0 fuel">fuel</td>
+                                    <!--<td></td>-->
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" colspan="3" class="seperator2 data">Leg Name</td>
+                                    <td class="seperator1 data">ident</td>
+                                    <!--<td>1</td>-->
+                                    <!--<td>2</td>-->
+                                    <td colspan="2" class="seperator2 data">temp</td>
+                                    <!--<td>v</td>-->
+                                    <td colspan="2" class="seperator2 data">wca</td>
+                                    <td colspan="2" class="seperator2 data">var.</td>
+                                    <td colspan="2" class="seperator2 data">dev.</td>
+                                    <td class="seperator2 rem data">rem</td>
+                                    <td class="seperator1 seperator2 data">act</td>
+                                    <td class="seperator2 data">ate</td>
+                                    <td class="seperator2 data">ata</td>
+                                    <td class="seperator2 seperator0 rem data">rem</td>
+                                </tr>
+                                <tr class="end-header">
+                                    <td class="seperator0 seperator2 data">freq</td>
+                                    <td rowspan="2" class="seperator2 data">course</td>
+                                    <td rowspan="2" class="seperator2 data">alt</td>
+                                    <td class="data">d</td>
+                                    <td class="data">v</td>
+                                    <td colspan="2" rowspan="2" class="seperator1 seperator2 data">tas</td>
+                                    <td class="data" colspan="2">tc</td>
+                                    <td class="data" colspan="2">th</td>
+                                    <td class="data" colspan="2">mh</td>
+                                    <td colspan="2" rowspan="2" class="seperator2 data">ch</td>
+                                    <!--<td></td>-->
+                                    <td class="leg data">leg</td>
+                                    <td class="seperator1 data">est</td>
+                                    <td class="data">ete</td>
+                                    <td class="data">eta</td>
+                                    <td class="seperator0 data fuel">fuel</td>
+                                </tr>
+
+                                <!-- Continuous section -->
+                                <tr class="template">
+                                    <td rowspan="2" colspan="3" class="seperator2 data">Leg Name</td>
+                                    <td class="seperator1 data">ident</td>
+                                    <!--<td></td>-->
+                                    <!--<td></td>-->
+                                    <td colspan="2" class="seperator2 data">temp</td>
+                                    <td colspan="2" class="seperator2 data">wca</td>
+                                    <td colspan="2" class="seperator2 data">var.</td>
+                                    <td colspan="2" class="seperator2 data">dev.</td>
+                                    <!--<td>v</td>-->
+                                    <td class="seperator2 data">rem</td>
+                                    <td class="seperator1 seperator2 data">act</td>
+                                    <td class="seperator2 data">ate</td>
+                                    <td class="seperator2 data">ata</td>
+                                    <td class="seperator2 seperator0 data">rem</td>
+                                </tr>
+                                <tr class="template">
+                                    <td class="seperator0 seperator2 data">freq</td>
+                                    <td rowspan="2" class="seperator2 data">course</td>
+                                    <td rowspan="2" class="seperator2 data">alt</td>
+                                    <td class="data">d</td>
+                                    <td class="data">v</td>
+                                    <td colspan="2" rowspan="2" class="seperator1 seperator2 data">cas</td>
+                                    <td class="data" colspan="2">tc</td>
+                                    <td class="data" colspan="2">th</td>
+                                    <td class="data" colspan="2">mh</td>
+                                    <td colspan="2" rowspan="2" class="seperator2 data">ch</td>
+                                    <!--<td></td>-->
+                                    <td class="leg data">leg</td>
+                                    <td class="seperator1 data">est</td>
+                                    <td class="data">ete</td>
+                                    <td class="data">eta</td>
+                                    <td class="seperator0 data fuel">fuel</td>
+                                </tr>
+
+                                <!-- footer -->
+                                <tr class="footer-start">
+                                    <td rowspan="2" colspan="3" class="seperator2 data">Leg Name</td>
+                                    <td class="seperator1 data">ident</td>
+                                    <!--<td></td>-->
+                                    <!--<td></td>-->
+                                    <td colspan="2" class="seperator2 data">temp</td>
+                                    <td colspan="2" class="seperator2 data">wca</td>
+                                    <td colspan="2" class="seperator2 data">var.</td>
+                                    <td colspan="2" class="seperator2 data">dev.</td>
+                                    <!--<td>v</td>-->
+                                    <td class="seperator2 data">rem</td>
+                                    <td class="seperator1 seperator2 data">act</td>
+                                    <td class="seperator2 data">ate</td>
+                                    <td class="seperator2 data">ata</td>
+                                    <td class="seperator2 seperator0 data">rem</td>
+                                </tr>
+                                <tr class="footer">
+                                    <td class="seperator0 seperator2 data">freq</td>
+                                    <th colspan="14" class="seperator2" style="text-align:right;">Total&gt;&gt;</th>
+
+                                    <!--<td></td>-->
+                                    <td id="legTotal" class="seperator2 data"></td>
+                                    <th class="seperator1 seperator2"></th>
+                                    <td id="eteTotal" class="seperator2 data"></td>
+                                    <th class="seperator2"></th>
+                                    <td id="fuelTotal" class="seperator0 seperator2 data"></td>
+                                </tr>
+                                <tr class="footer-end">
+                                    <td colspan="22" class="seperator2" style="color:white; background-color:#606060;">Flight Plan and Weather Log on Reverse Side</td>
+                                    <td style="color:white; background-color:#606060;" class="seperator2 seperator0"><button id="addleg">Add Leg</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="vertical-align:top;">
+                        <!-- Airport & ATIS Advisories -->
+                        <table class="airport-atis-advis">
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" style="color:white; background-color:black; text-align:center;">Airport &amp; ATIS Advisories</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Departure</td>
+                                    <td colspan="2" style="background-color:black;"></td>
+                                    <td class="label">Destination</td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">ATIS CODE</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">Ceiling &amp; Visibility</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">Wind</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">Altimeter</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">Approach</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="2" class="label">Runway</td>
+                                    <td class="data"></td>
+                                </tr>
+                                <tr>
+                                    <td class="data"></td>
+                                    <td colspan="3" class="label">Time Check</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Airport Frequencies -->
+                        <table class="airport-freq">
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" style="color:white; background-color:black; text-align:center;">Airport Frequencies</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="label">Departure</td>
+                                    <td colspan="2" class="label">Destination</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="data">&nbsp;</td>
+                                    <td colspan="2" class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">ATIS</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">ATIS</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Ground</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">Ground</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Tower</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">Tower</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Departure</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">Departure</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">CTAF</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">CTAF</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">FSS</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">FSS</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">UNICOM</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">UNICOM</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Field Elev.</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td class="label">Field Elev.</td>
+                                    <td class="data">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Block In</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td colspan="2" class="label">Log Time</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Block Out</td>
+                                    <td class="data">&nbsp;</td>
+                                    <td colspan="2" class="data"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

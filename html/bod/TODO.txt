@@ -1,0 +1,10 @@
+TODO: 
+	1.Need to separate all logic from presentation. User Smarty. Logic pages will
+	  fill variables/objs with data. Each presentation pages will call the logic
+	  page needed to create it's view.
+	2. Need to re-think classes use composition instead of inheritance
+	3. Surveys
+
+facebook
+http://developers.facebook.com/docs/reference/plugins/like
+http://developers.facebook.com/docs/reference/javascript/

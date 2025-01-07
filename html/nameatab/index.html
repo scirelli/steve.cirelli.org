@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>No Name</title>
+        <meta name="description" content="Name a tab in Firefox">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <form id='fForm' name='fForm'>
+                <label for="pagetitle">Page title:</label>
+                <input type="text" name="pagetitle" id="pagetitle" value="" placeholder="Type a page title then hit enter."/>
+            </form>
+            <a href="about:blank" target="_blank">New Tab</a>
+        </div>
+        <script type="text/javascript">
+            var pagetitle = document.getElementById('pagetitle');
+            var f = document.getElementById('fForm');
+            
+            document.title = getParameterByName('title') || getParameterByName('pagetitle') || 'No Name';
+
+            f.onsubmit = function(){
+               changeTitle(pagetitle.value);
+               return false;
+            }
+            function changeTitle(title){
+               document.title = title;
+               window.location.href('/nameatab/?title=' + encodeURIComponent(title));
+            }
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                    results = regex.exec(location.search);
+                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        </script>
+    </body>
+</html>
